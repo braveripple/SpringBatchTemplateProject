@@ -10,10 +10,10 @@ import org.springframework.test.context.ActiveProfiles;
 
 @SpringBootTest
 @ActiveProfiles("development")
-class PGCopyUtilTest {
+class PGCopyClientTest {
 
 	@Autowired
-	private PGCopyUtil pgCopyUtil;
+	private PGCopyClient pgCopyClient;
 	
 	private final Path tempfile = Paths.get("tempfile.csv");
 	
